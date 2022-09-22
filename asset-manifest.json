@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/yugykim/portfolio/static/js/main.a1688e58.js",
+    "static/media/firstG.png": "/yugykim/portfolio/static/media/firstG.e6fc51b24d43c6df61bb.png",
+    "static/media/netflixReact.png": "/yugykim/portfolio/static/media/netflixReact.2700b5dc65290a4137a5.png",
+    "static/media/Lebistro.png": "/yugykim/portfolio/static/media/Lebistro.7f28b60f2c2ac3c26bfe.png",
+    "static/media/momentom.png": "/yugykim/portfolio/static/media/momentom.c7755db560117c61ab97.png",
+    "static/media/nasaPic.png": "/yugykim/portfolio/static/media/nasaPic.fbe5fe6b332a19651bf0.png",
+    "static/media/moodSpot.png": "/yugykim/portfolio/static/media/moodSpot.874b21a6c98c74800037.png",
+    "static/media/uberEat.png": "/yugykim/portfolio/static/media/uberEat.a75e35e458f51038ed62.png",
+    "static/media/firstWeb.png": "/yugykim/portfolio/static/media/firstWeb.9483ebce22f1b27978f0.png",
+    "static/media/todoReact.png": "/yugykim/portfolio/static/media/todoReact.f99c25f5152f694c86bd.png",
+    "static/media/backgroundImg.png": "/yugykim/portfolio/static/media/backgroundImg.fe907bfd9ac7ca36ab26.png",
+    "index.html": "/yugykim/portfolio/index.html",
+    "main.a1688e58.js.map": "/yugykim/portfolio/static/js/main.a1688e58.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.a1688e58.js"
+  ]
+}
