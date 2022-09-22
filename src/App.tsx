@@ -3,13 +3,10 @@ import { isDocTheme, isMainTheme } from "./theme";
 import { mainAtom } from "./atoms"
 import { useRecoilValue } from "recoil";
 import HorizontalScroll from 'react-scroll-horizontal';
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import Box1 from "./components/Box1";
-import SideMenu from "./components/SideMenuBar";
-import Box2 from "./components/Box2";
-import Box3 from "./components/Box3";
-import { Route, Routes } from "react-router-dom";
+import Main from "./components/Main";
+import About from "./components/About";
+import Project from "./components/Project";
 
 const Globalstyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,200&display=swap');
@@ -40,6 +37,8 @@ const Globalstyle = createGlobalStyle`
   }
   body {
     line-height: 1;
+    font-family: 'Manrope', sans-serif;
+    color: white;
   }
   ol, ul {
     list-style: none;
@@ -75,32 +74,18 @@ const ContentWrap = styled(motion.div)`
 
 function App() {
   const mainTheme = useRecoilValue(mainAtom);
-  const [scrollPosition, setPosition] = useState({ scrollX: 0, scrollY: 0 })
-
-  useEffect(() => {
-    function updatePosition() {
-      setPosition({ scrollX: window.scrollX, scrollY: window.scrollY })
-    }
-
-    window.addEventListener('scroll', updatePosition)
-    updatePosition()
-
-    return () => window.removeEventListener('scroll', updatePosition)
-  }, [])
-
   return (
     <ThemeProvider theme={mainTheme ? isMainTheme : isDocTheme}>
       <Globalstyle />
       <Wrapper>
-        <SideMenu />
         <ContentWrap>
           <HorizontalScroll
-            config={{ stiffness: 5, damping: 5 }}
+            config={{ stiffness: 5, damping: 3 }}
             animValues={80}
           >
-            <Box1 />
-            <Box2 />
-            <Box3 />
+            <Main />
+            <About />
+            <Project />
           </HorizontalScroll>
         </ContentWrap>
       </Wrapper>
