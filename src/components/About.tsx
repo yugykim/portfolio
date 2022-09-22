@@ -37,7 +37,7 @@ const InnerFirstOne = styled(motion.div)`
 
 const InnerFirstTwo = styled(motion.div)`
   margin-right: 10px;
-  margin-top: 300px;
+  margin-top: 400px;
 `;
 
 const SecondBox = styled(motion.div)`
